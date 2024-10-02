@@ -1,0 +1,140 @@
+<html>
+  <head lang="id">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Server Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+<!-- ------------------------------------- -->
+<!-- code ini dibuat oleh nexdy dan ahzan -->
+<!-- ------------------------------------- -->
+  <title>Periksa Server Minecraft</title>
+  <style>
+   /* logo minecraft bedrock */
+   .versi-minecraft {
+    display: flex;
+    justify-content: center;
+    border: var(--br);
+    margin: 10px 0 0 0 ;
+   }
+   .versi-minecraft a {
+    place-items: center;
+    display: grid;
+    width: 150px;
+    height: 190px;
+    margin: 10px;
+    padding: 20px 10px;
+    background: var(--bg);
+    border: 3px solid var(--a);
+    border-radius: 20px;
+    color: var(--a);
+    
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transform: scale(0.9);
+   }
+   .versi-minecraft a:hover{
+    box-shadow: 0 0 10px var(--c);
+    background: var(--c);
+    transform: scale(1);
+   }
+   .versi-minecraft a:active{
+    background: var(--d);
+   }
+
+   
+
+   /* ----- Status Server ----- */
+   .status-server{
+    width: 100%;
+    display: flex;
+    border: var(--br);
+    margin: 3px 0 0 0 ;
+    justify-content: end;
+   }
+   span{
+    border: 3px solid var(--a);
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+   }
+   
+   footer h1{
+    color: #3b3b3b;
+   }
+   .online{
+    color: var(--ga);
+   }
+   .login{
+    display: flex;
+   }
+   .player{
+    color: #FF8400;
+   }
+   h2{
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+   }
+  </style>
+ </head>
+ <body>
+ 
+ <div class="main">
+  <div class="tampilan-minecraft">
+   <h1>Cek Server</h1>
+   
+   <div class="Minecraft">
+    <div class="card">
+     <a>
+      <img src="java.png" width="120px">
+      <h1>Java</h1>
+     </a>
+    </div>
+   </div>
+   
+   <div class="input">
+    <p>IP Server</p>
+    <div class="text">
+     <input type="text" placeholder="Enter IP address" id="ip-input">
+    </div>
+   </div>
+
+   
+   <div class="vote-close-next">
+    <a href="servermc.html" id="back-Server-lobby" >
+      <button id="back-Server-lobby">Back</button>
+    </a>
+    <a id="next-server-minecraft">
+     <button class="checkup-server-java" id="next-server-minecraft" >Checkup</button>
+    </a>
+   </div>
+   
+   <div class="status-server">
+    <span id="blue"></span>
+    <span id="red"></span>
+   </div>
+  </div>
+  
+  <footer>
+   <h2>Informasi Server</h2>
+   <ul id="online">
+    <li class="online">Status: Online</li>
+    <li class="Player">Player: 1/5</li>
+    <li>Server: realmesmc.com</li>
+    <li>IP: ahzan mc</li>
+    <li>versi: 1.21.0</li>
+    <li>Perangkat lunak Server: aternos</li>
+   </ul>
+   <div class="join-server">
+    <button id="join-server">Bergabung</button>
+   </div>
+  </footer>
+ </div>
+
+ </body>
+ <script src="script.js">
+
+ </script>
+</html>

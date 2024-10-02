@@ -1,0 +1,319 @@
+<html>
+ <head lang="id">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Server Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+<!-- ------------------------------------- -->
+<!-- code ini dibuat oleh nexdy dan ahzan -->
+<!-- ------------------------------------- -->
+  <title>Periksa Server Minecraft</title>
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+   }
+
+   @font-face{
+    font-family: 'Minecraft';
+    src: url(Minecraft.otf);
+   }
+   
+   body {
+    font-family: var(--font);
+    background: url(banner2.webp);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: #fff;
+   }
+   
+   h1{
+    border: var(--br);
+   }
+   .cek-server{
+    display: grid;
+    place-items: center;
+   p{
+    width: 100%;
+    text-align: left;
+    font-size: 23px;
+   }
+   }
+   .tampilan-Minecraft {
+    display: grid;
+    place-items: center;
+    padding: 15px ;
+    text-align: center;
+    border: 3px solid var(--a);
+    box-shadow: 0 0 10px var(--d);
+    border-radius: 20px;
+    width: 390px;
+    height: auto;
+   }
+   /* logo minecraft bedrock */
+   .versi-Minecraft {
+    display: flex;
+    justify-content: center;
+    border: var(--br);
+    margin: 10px 0 0 0 ;
+   }
+   .versi-minecraft a {
+    place-items: center;
+    display: grid;
+    width: 150px;
+    height: 190px;
+    margin: 10px;
+    padding: 20px 10px;
+    background: var(--bg);
+    border: 3px solid var(--a);
+    border-radius: 20px;
+    color: var(--a);
+    
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transform: scale(0.9);
+   }
+   .versi-minecraft a:hover{
+    box-shadow: 0 0 10px var(--c);
+    background: var(--c);
+    transform: scale(1);
+   }
+   .versi-Minecraft a:active {
+    background: var(--d);
+   }
+
+   
+   /* --- input type text --- */
+
+   
+   /* --- button back and enter --- */
+   .button {
+    border: var(--br);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+   button{
+    font-family: var(--font);
+    transition-duration: 0.3s;
+    height: 50px;
+    width: 100%;
+   }
+   
+   #back {
+    font-size: 30px;
+    border-bottom-left-radius: var(--bbrr);
+    border-top-left-radius: var(--bbrr);
+    border: 1.5px solid var(--ra);
+    background: var(--rbg);
+    color: var(--ra);
+    height: 50px;
+    width: 100%;
+   }
+   #back:hover{
+    box-shadow: 0 0 10px var(--ra);
+    background: var(--rc);
+   }
+   #back:active{
+    background: var(--rd);
+   }
+   
+   #next {
+    font-size: 30px;
+    border-bottom-right-radius: var(--bbrr);
+    border-top-right-radius: var(--bbrr);
+    border: 1.5px solid var(--ga);
+    background: var(--gbg);
+    color: var(--ga);
+    height: 50px;
+    width: 100%;
+   }
+   #next:hover{
+    box-shadow: 0 0 10px var(--ga);
+    background: var(--gc);
+   }
+   #next:active{
+    background: var(--gd);
+   }
+   
+   .server{
+    width: 100%;
+    display: flex;
+    border: var(--br);
+    margin: 3px 0 0 0 ;
+    justify-content: end;
+   }
+   span{
+    border: 3px solid var(--a);
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+   }
+   
+   footer{
+    color: white;
+    border: var(--br);
+    width: 380px;
+    padding: 20px ;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    ul{
+     margin: 0 0 10px 0;
+    }
+   }
+   footer h1{
+    color: #3b3b3b;
+    
+   }
+   .status{
+    color: var(--ga);
+   }
+   .login{
+    display: flex;
+   }
+   .player{
+    color: #FF8400;
+   }
+   h2{
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+   }
+
+  </style>
+ </head>
+ <body>
+  <div class="cek-server">
+   <div class="tampilan-Minecraft">
+    <h1>Masukan Nama Id</h1>
+   
+   <div class="versi-Minecraft">
+    <div class="card">
+     <a>
+      <img src="bedrock.png" width="120px">
+      <h1>Bedrock</h1>
+     </a>
+    </div>
+   </div>
+   
+   <div class="input">
+    <p>IP Server</p>
+    <div class="text">
+     <input type="text" id="IP-Server" placeholder="Enter IP address" >
+    </div>
+    <p>Port Server</p>
+    <div class="text">
+       <input type="number" id="IP-Port" placeholder="Enter Port Number" >
+    </div>
+   </div>
+
+   
+   <div class="button">
+    <a href="servermc.html" id="back">
+    <button id="back" >Back</button>
+    </a>
+    <a href="" id="next">
+     <button id="next" >Checkup</button>
+    </a>
+   </div>
+   
+   <div class="server">
+    <span id="blue"></span>
+    <span id="red"></span>
+   </div>
+  </div>
+  
+    <footer>
+   <h2>Informasi Server</h2>
+   <ul id="online">
+    <li class="status" id="status">Status: Online</li>
+    <li class="Player" id="player">Player: 1/2</li>
+    <li>Server: realmesmc.com</li>
+    <li>IP: ahzan mc</li>
+    <li>Port: 19797</li>
+    <li>versi: 1.21.0</li>
+    <li>Perangkat lunak Server: aternos</li>
+   </ul>
+   <div class="login">
+    <button id="back">back</button>
+    <button id="next">Bergabung</button>
+   </div>
+  </footer>
+  </div>
+ </body>
+ 
+ 
+ <script>
+  
+  let ipInput = document.getElementById("IP-Server");
+let portInput = document.getElementById("IP-Port");
+
+async function getServerStatus() {
+    const ip = ipInput.value;
+    const port = portInput.value;
+
+    // Panggil API Minecraft
+    const response = await fetch(`https://api.mcsrvstat.us/bedrock/3/${ip}:${port}`);
+    // Uraikan respon JSON jadi objek javascript yang bisa kamu gunakan
+    const data = await response.json();
+
+    if (data.online) {
+        // Jika Server Online
+        document.getElementById("server-status").innerHTML = `
+            <p class="card-text text-dark">
+                ${data.motd.html}<br>
+                Server : ${data.motd.clean}<br>
+                IP : ${data.hostname}<br>
+                Port : ${data.port}<br>
+                Status : ONLINE<br>
+                Players : ${data.players.online} / ${data.players.max}<br>
+                Server Software : ${data.software}<br>
+                Version : ${data.version}<br>
+            </p>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                <a href="minecraft:?addExternalServer=${data.motd.clean}|${ip}:${port}" class="btn btn-primary">Join Server</a>
+            </div>`;
+    } else {
+        // Jika Server Offline
+        document.getElementById("server-status").innerHTML = `
+            <p class="card-text text-dark">
+                Status : OFFLINE<br>
+                Server Software : ${data.software}<br>
+                Version : ${data.version}<br>
+            </p>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+            </div>`;
+    }
+
+    // Buka Modal atau Popup
+    var bukaModal = new bootstrap.Modal(document.getElementById('ModalHasil'));
+    bukaModal.show();
+}
+
+// Panggil Fungsi getServerStatus()
+document.addEventListener("DOMContentLoaded", function () {
+    const submitButton = document.querySelector('button[type="button"]');
+    submitButton.addEventListener("click", getServerStatus);
+});
+
+function closeModal() {
+    // Tutup modal atau Popup
+    var tutupModal = new bootstrap.Modal(document.getElementById('ModalHasil'));
+    tutupModal.hide();
+
+    setInterval(closeModal, 1000);
+
+    // Refresh halaman
+    window.location.reload();
+}
+
+ </script>
+</html>

@@ -1,0 +1,91 @@
+<!-- ---------------------------------------- -->
+<!-- code ini dibuat oleh NexdyMC dan AhZanMC -->
+<!-- ---------------------------------------- -->
+<!DOCTYPE html>
+<html>
+ <head lang="Id">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Server Minecraft</title>
+  <link rel="stylesheet" href="https://www.github.com/NexdyMC"> 
+  <link rel="stylesheet" href="style.css">
+  <style>   
+  * {
+  margin: 0;
+  padding: 0;
+  }
+  
+  </style>
+ </head>
+ <body>
+  <main>
+   <div class="main">
+  
+    <div class="judul">
+     <h1>Cek Server Minecraft</h1>
+     <p>Pilih Edisi Minecraft Terlebih Dahulu</p>
+    </div>
+    
+   <div class="minecraft">  
+    <!-- versi minecraft java -->
+    <div class="card">
+     <a href="minecraft_java.html">
+      <img src="java.png" width="125px">
+      <h1>Java</h1>
+     </a>
+    </div>
+    
+    <!-- versi minecraft bedrock -->
+    <div class="card">
+     <a href="minecraft_bedrock.html">
+      <img src="bedrock.png" width="120px">
+      <h1>Bedrock</h1>
+     </a>
+    </div>
+    
+   </div>
+   
+   <!-- kredit --> 
+   <div class="kredit">
+       <button id="kreditbtn" onclick="kreditSpanBtn()">Kredit</button>
+   </div>
+   
+   </div>
+   <div class="kreditSpan" id="kreditSpan">
+    <h1>--</h1>
+    <div class="pembuat-web" id="pembuat-web">
+     <p>Creator: @NexdyMC @AhZanMC</p>
+     <p>Version: 1.21.30</p>
+     <p>Github AhzanMC: </p>
+     <p>Github NexdyMC: </p>
+     <p></p>
+     <p>Terima Kasih </p>
+    </div>
+    </div>
+   </div>
+  </main>
+ </body>
+ <script>
+ 
+const element = document.getElementById('kreditSpan');
+const button = document.getElementById('kreditbtn');
+const pembuatweb = document.getElementById("pembuat-web");
+
+function kreditSpanBtn() {
+  if (element.style.height < '280px') {
+    pembuatweb.innerHTML = '<p>Creator: @NexdyMC @AhZanMC</p>';
+    element.style.height = '40px'; 
+    element.style.overflow = 'hidden';
+  } else {
+    pembuatweb.innerHTML = "<p>Creator: @NexdyMC @AhZanMC</p><p>Version: 1.21.30</p><p>Github AhzanMC: </p><p>Github NexdyMC: </p><p></p><br><p>Terima Kasih >w< </p>";
+    element.style.height = '210px'; 
+    element.style.overflow = 'hidden';
+  }
+}
+
+
+
+
+
+ </script>
+</html>
