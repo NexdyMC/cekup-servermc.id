@@ -1,0 +1,270 @@
+* {
+margin: 0;
+padding: 0;
+}
+:root{
+    --white: #fff;
+    --e: #0012FB0C;
+    --bbg: #0039F920;
+    --bg: #003FFD52;
+    --c: #1C6BFE8D;
+    --a: #0062FF;
+    --d: #85B6FF;
+    --rbg: #F1000008;
+    --ra: #ef0000;
+    --rc: #FD00004D;
+    --rd: #FF4232BC;
+    --gbg:#00FB000C;
+    --ga: #2EFE29F7;
+    --gc: #25FD1B4F;
+    --gd: #20FF1A77;
+    --wa: #FFFFFF73;
+    --wbg: #ffffff13;
+    --ca: #00FFFF;
+    --cd: #00FEFED8;
+    --cc: #00FBFD7C;
+    --cbg:#00F9F921;
+    --f-size: 20px ;
+    --f-sz-i: 30px ;
+    --background-url: url(banner2.webp);
+    --font: 'Minecraft';
+    --bbrr: 30px;
+    --br: 2px solid var(--); /* active border bebas mau warna apa*/
+}
+   
+@font-face{
+    font-family: 'Minecraft';
+    src: url(Minecraft.otf);
+   
+}
+
+body {
+    background: var(--background-url);
+    background-position: top;
+    background-size: cover;
+    font-family: var(--font);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    height: 99vh;
+   }
+
+/* --- lobby --- */
+
+main {
+   display: grid;
+   place-content: center;
+/*     position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+    
+    width: 390px;
+    height: auto;
+    padding: 8px 0 0;
+    border: 3px solid var(--a);
+    box-shadow: 0 0 10px var(--d);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tampilan-minecraft {
+    display: grid;
+    place-items: center;
+    padding: 10px ;
+    text-align: center;
+    border: 3px solid var(--a);
+    box-shadow: 0 0 10px var(--d);
+    border-radius: 20px;
+    width: 390px;
+    height: auto;
+}
+   
+/* ----- icon minecraft ----- */
+.minecraft {
+    display: flex;
+    justify-content: center;
+    border: var(--br);
+    margin: 10px 0 0 0 ;
+}
+.minecraft a {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 190px;
+    margin: 10px;
+    padding: 20px 10px;
+    border: 3px solid var(--a);
+    border-radius: 20px;
+    color: var(--a);
+    background: var(--bg);
+    text-align: center;
+    text-decoration: none;
+     
+    transition-duration: 0.3s;
+    transform: scale(0.9);
+}
+.minecraft a:hover{
+    transform: scale(1);
+    background: var(--c);
+    box-shadow: 0 0 10px var(--a);
+}
+.minecraft a:active{
+    background: var(--d);
+}
+
+   /* --- input type text --- */
+   .input {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border: var(--br);
+    p{
+        width: 100%;
+        text-align: left;
+        font-size: var(--f-size);
+    }
+   }
+   .text {
+    margin-bottom: 14px;
+    width: 100%;
+    border: 3px solid var(--a);
+    background: var(--bbg);
+    border-radius: 30px;
+  }
+  .text input{
+    font-family: var(--font);
+    border-radius: 30px;
+    padding: 10px 10px;
+    font-size: var(--f-size) ;
+    color: #fff;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+   }
+   .text input:focus{
+    box-shadow: 0 0 10px var(--a);
+   }
+
+
+    
+#kreditbtn {
+    cursor: pointer;
+    width: 370px;
+    height: 50px;
+    margin: 10px 10px 20px 10px;
+    border: 3px solid var(--ca);
+    border-radius: 25px;
+    background: var(--cbg);
+    color: var(--ca) ;
+    font-size: 30px;
+    font-family: var(--font);
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+#kreditbtn:hover{
+    background: var(--cc);
+    box-shadow: 0 0 6px var(--ca);
+}
+#kreditbtn:active{
+    background: var(--cd);
+}
+     
+.kreditSpan{
+    background: var(--bg);
+    transition-duration: 0.3s;
+    border-bottom-right-radius: var(--br);
+    border-bottom-left-radius: var(--br);
+    overflow: hidden;
+    color:  var(--a);
+    width: 100%;
+    height: 40px;
+}
+.pembuat-web{
+    text-align: left;
+    font-size: var(--f-size);
+    padding: 0 0 0 20px;
+}
+     
+  /* ----- button back and enter ----- */
+.vote-close-next {
+    border: var(--br);
+    display: flex;
+    width: 100%;
+}
+.vote-close-next button{
+    font-family: var(--font);
+    transition-duration: 0.3s;
+    height: 50px;
+    width: 100%;
+}
+   /* ----- back to lobby ----- */
+#back-Server-lobby {
+    font-size: var(--f-sz-i);
+    border-bottom-left-radius: var(--bbrr);
+    border-top-left-radius: var(--bbrr);
+    border: 1.5px solid var(--ra);
+    background: var(--rbg);
+    color: var(--ra);
+    height: 50px;
+    width: 100%;
+}
+#back-Server-lobby:hover{
+    box-shadow: 0 0 10px var(--ra);
+    background: var(--rc);
+}
+#back-Server-lobby:active{
+    background: var(--rd);
+}
+   /* ----- next server ----- */
+#next-server-minecraft {
+    font-size: var(--f-sz-i);
+    border-bottom-right-radius: var(--bbrr);
+    border-top-right-radius: var(--bbrr);
+    border: 1.5px solid var(--ga);
+    background: var(--gbg);
+    color: var(--ga);
+    height: 50px;
+    width: 100%;
+}
+#next-server-minecraft:hover{
+    box-shadow: 0 0 10px var(--ga);
+    background: var(--gc);
+}
+#next-server-minecraft:active{
+    background: var(--gd);
+}
+/* ----- join server ----- */
+#join-server {
+    font-family: var(--font);
+    font-size: var(--f-sz-i);
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--ga);
+    border-radius: 30px;
+    background: var(--gbg);
+    color: var(--ga);
+}
+#join-server:hover {
+    box-shadow: 0 0 10px var(--ga);
+    background: var(--gc);
+}
+#join-server:active{
+    background: var(--gd);
+}
+footer{
+    border: 3px solid #fff;
+    background: var(--wbg);
+    box-shadow: 0 0 10px var(--wa);
+    font-size: var(--f-size);
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px ;
+    height: auto;
+    width: auto;
+    ul{
+     margin: 0 0 10px 0;
+    }
+}
