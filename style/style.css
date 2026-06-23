@@ -1,7 +1,7 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --white: #fff;
@@ -53,6 +53,7 @@ body {
 main {
     border: 2px solid var(--c);
     border-radius: 1rem;
+    margin: 1rem;
 }
 
 .container {
@@ -86,6 +87,7 @@ main {
     
     &:hover {
         transform: scale(1.1);
+        background: var(--c);
     }
 }
 
@@ -124,4 +126,67 @@ main {
     text-align: center;
     margin-top: 1rem;
     font-style: italic;
+}
+
+.form-content {
+    display: grid;
+    text-align: left;
+}
+
+.ip-input {
+    margin: 0.25rem 0 ;
+    padding: 0.5rem;
+    font-family: 'Minecraft';
+    font-size: 1rem;
+    border-radius: 999px;
+    border: 2px solid var(--a);
+    background: var(--bbg);
+    color: var(--white);
+    
+}
+
+.btn-content {
+    display: flex;
+    margin-top: 1rem ;
+    a {
+        transition: .3s;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        padding: 0.5rem;
+        color: var(--white);
+        font-size: 1rem;
+        text-decoration: none;
+        border: 2px solid var(--ra);
+        border-top-left-radius: 999px;
+        border-bottom-left-radius: 999px;
+        font-size: 1rem;
+        &:hover {
+            background: var(--rd);
+        }
+    }
+    
+    button {
+        transition: .3s;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem;
+        color: var(--white);
+        font-size: 1rem;
+        background: none;
+        border: none;
+        background: var(--gbg);
+        border: 2px solid var(--ga);
+        border-top-right-radius: 999px ;
+        border-bottom-right-radius: 999px;
+        &:hover {
+            background: var(--gd);
+        }
+    }
+}
+
+
+.output-content {
+    padding: 1rem;
 }

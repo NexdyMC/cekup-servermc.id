@@ -37,17 +37,14 @@ async function getServerStatus() {
                 Players : ${data.players.online} / ${data.players.max}<br>
                 Server Software : ${data.software}<br>
                 Version : ${data.version}<br>
-            </p>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
-            </div>`;
+            </p>`;
 
-        // Fitur Copy MOTD
-        const copyButton = document.querySelector(".copy-motd");
-        copyButton.addEventListener("click", function() {
-            const motdText = this.getAttribute("data-motd");
-            copyToClipboard(motdText);
-        });
+        // // Fitur Copy MOTD
+        // const copyButton = document.querySelector(".copy-motd");
+        // copyButton.addEventListener("click", function() {
+        //     const motdText = this.getAttribute("data-motd");
+        //     copyToClipboard(motdText);
+        // });
 
     } else {
         // Jika Server Offline
@@ -56,10 +53,7 @@ async function getServerStatus() {
                 Status : OFFLINE<br>
                 Server Software : ${data.software}<br>
                 Version : ${data.version}<br>
-            </p>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
-            </div>`;
+            </p>`;
     }
 
     // Buka Modal atau Popup

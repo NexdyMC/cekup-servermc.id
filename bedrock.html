@@ -18,8 +18,7 @@
         <div class="container">
 
             <div class="header-text">
-                <h1>Cek Server Minecraft</h1>
-                <p>Pilih Edisi Minecraft Terlebih Dahulu</p>
+                <h1>Cek Server Bedrock</h1>
             </div>
 
             <div class="card-content">
@@ -28,32 +27,46 @@
                     <h3>Bedrock</h3>
                 </a>
             </div>
+            
 
+            <!-- form -->
+            <form class="form-content">
+                <!-- input : ip  -->
+                <label for="ip-input">IP Server </label>
+                <input type="text" class="ip-input" id="ip-input" placeholder="Ex : play.example.com" required>
+                
+                <!-- input : port  -->
+                <label for="ip-input">Port Server</label>
+                <input type="text" class="ip-input" id="ip-input" placeholder="Ex : 19132" required>
+                
+                <!-- btn content -->
+                <div class="btn-content">
+                    <a href="index.html">Back</a>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#ModalHasil">Cek</button>
+                </div>
+            </form>
         </div>
-        
-        <div class="credit-content">
-            <div class="credit-box">
-                <div class="credit-row">
-                    <span>Creators:</span>
-                    <span><strong>@NexdyMC</strong> & <strong>@AhzanMC</strong></span>
-                </div>
-                <div class="credit-row">
-                    <span>Version:</span>
-                    <span>1.21.30</span>
-                </div>
-                <div class="credit-row">
-                    <span>Open Source:</span>
-                    <span>
-                        <a href="https://github.com/AhzanMC" target="_blank" class="credit-link">GitHub AhzanMC</a>
-                        <a href="https://github.com/NexdyMC" target="_blank" class="credit-link">GitHub NexdyMC</a>
-                    </span>
-                </div>
-                <p class="thanks-text">Terima Kasih >w<</p> 
-            </div> 
-        </div> 
     </main> 
 
+    <main>
+        <div class="output-content" id="ModalHasil" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body" id="server-status">
+                        
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <!-- Server info will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <!-- script js -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
