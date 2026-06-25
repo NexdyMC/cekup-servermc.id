@@ -56,19 +56,20 @@ section {
     border: 2px solid var(--c);
     border-radius: 1rem;
 }
-.container {
+
+/* .container {
     text-align: center;
     padding: 1rem 0.75rem;
-}
+} */
 
-.card-content {
+/* .card-content {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-}
-
+} */
+/* 
 .card-list {
     color: #fff;
     text-decoration: none;
@@ -89,7 +90,7 @@ section {
         transform: scale(1.1);
         background: var(--c);
     }
-}
+} */
 
 .btn-credit {
     display: flex;
@@ -133,7 +134,7 @@ section {
     display: grid;
     text-align: left;
 }
-
+/* 
 .ip-input {
     margin: 0.25rem 0 ;
     padding: 0.5rem;
@@ -144,7 +145,7 @@ section {
     background: var(--bbg);
     color: var(--white);
     
-}
+} */
 
 .btn-content {
     display: flex;
