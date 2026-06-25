@@ -1,0 +1,40 @@
+document.getElementById("server-status").innerHTML = `
+    <div class="server-result text-white" style="font-family: inherit;">
+        <div class="d-flex align-items-center mb-3 pb-2 border-bottom border-secondary border-opacity-50">
+            <img src="https://api.mcsrvstat.us/icon/${ip}" alt="server_icon" class="rounded me-3 shadow" height="64" width="64" style="image-rendering: pixelated;">
+            <div>
+                <div class="motd-text fs-6">
+                    ${data.motd.html} 
+                    <button class="btn btn-sm text-info p-0 ms-1 copy-motd" data-motd="${data.motd.raw}" title="Copy MOTD">
+                        <i class="fa-regular fa-clipboard"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="server-details" style="line-height: 1.8;">
+            <div class="row gx-2">
+                <div class="col-12 col-md-4 text-white-50">Server</div>
+                <div class="col-12 col-md-8">: ${data.motd.clean}</div>
+                
+                <div class="col-12 col-md-4 text-white-50">IP</div>
+                <div class="col-12 col-md-8 fw-bold text-info">: ${data.hostname}</div>
+                
+                <div class="col-12 col-md-4 text-white-50">Port</div>
+                <div class="col-12 col-md-8">: ${data.port}</div>
+                
+                <div class="col-12 col-md-4 text-white-50">Status</div>
+                <div class="col-12 col-md-8">: <span style="color: #4ade80;">ONLINE</span></div>
+                
+                <div class="col-12 col-md-4 text-white-50">Players</div>
+                <div class="col-12 col-md-8">: ${data.players.online} <span class="text-white-50">/</span> ${data.players.max}</div>
+                
+                <div class="col-12 col-md-4 text-white-50">Software</div>
+                <div class="col-12 col-md-8">: ${data.software}</div>
+                
+                <div class="col-12 col-md-4 text-white-50">Version</div>
+                <div class="col-12 col-md-8">: ${data.version}</div>
+            </div>
+        </div>
+    </div>
+`;
