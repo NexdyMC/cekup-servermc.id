@@ -7,53 +7,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cek Server Minecraft</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <!-- link style -->
-    <link rel="stylesheet" href="https://www.github.com/NexdyMC">
-    <link rel="stylesheet" href="style/style.css">
+    <!-- cdn : tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.js"></script>
 </head>
-<body>
-    <section>
-        <div class="container">
+<body class="flex justify-center items-center bg-[url('images/background.webp')] bg-cover bg-center h-screen text-white font-['Minecraft']">
 
-            <div class="header-text">
-                <h1 class="text-3xl text-extrabold">Cek Server Minecraft</h1>
-                <p>Pilih Edisi Minecraft Terlebih Dahulu</p>
+    <section class="m-4 border border-blue-600 border-2 rounded-2xl backdrop-blur overflow-hidden">
+        <div class="text-center py-4 px-3">
+            
+            <p class="text-3xl text-bold">Cek Server Minecraft</p>
+            <p class="text-md text-normal">Pilih Edisi Minecraft Terlebih Dahulu</p>
+
+            <div class="mt-6 flex justify-center items-center gap-5">
+                
+                <!-- card : mc java -->
+                <a href="java.html" class="text-white bg-blue-700/10 grid content-between border-2 border border-blue-600 p-4 mb-4 rounded-xl duration-300 hover:scale-105 hover:bg-blue-700/50">
+                    <img src="images/java.webp" class="" width="100">
+                    <p class="mt-4 text-lg ">Java</p>
+                </a>
+                
+                <!-- card : mc bedrock -->
+                <a href="bedrock.html" class="text-white bg-blue-700/10 grid content-between border-2 border border-blue-600 p-4 mb-4 rounded-xl duration-300 hover:scale-105 hover:bg-blue-700/50">
+                    <img src="images/bedrock.webp" class="" width="100">
+                    <p class="mt-4 text-lg">Bedrock</p>
+                </a>
             </div>
 
-            <div class="card-content">
-                <a href="java.html" class="card-list">
-                    <img src="images/java.webp" class="card-img" width="100">
-                    <h3>Java</h3>
-                </a>
-
-                <a href="bedrock.html" class="card-list">
-                    <img src="images/bedrock.webp" class="card-img" width="100">
-                    <h3>Bedrock</h3>
-                </a>
-            </div>
-
-            <p style="max-width: 400px; margin: 1rem 0 ;">Traktir dong buat beli kopi, Rp2.000 aja udah cukup kok buat dukung perkembangan project-ku >w<</p>
-            <a href="https://saweria.co/NexdyExperiment" class="btn-credit" target="_blank">Donasi</a>
+            <p class="max-w-[400px] leading-5 mb-2 text-md text-normal">Traktir dong buat beli kopi, Rp2.000 aja udah cukup kok buat dukung perkembangan project-ku >w<</p>
+            
+            <!-- link : saweria -->
+            <a href="https://saweria.co/NexdyExperiment" class="border border-2 border-cyan-400 text-cyan-200 bg-cyan-300/10  flex justify-center p-2 text-center rounded-full hover:bg-cyan-400/30 duration-300 text-xl" target="_blank">Donasi</a>
         </div>
-        <div class="credit-content">
+
+        <div class="bg-cyan-400/20 px-3 py-4 text-cyan-300">
             <div class="credit-box">
                 <div class="credit-row">
-                    <span>Creators:</span>
-                    <span><strong>@NexdyMC</strong> & <strong>@AhzanMC</strong></span>
+                    <span>Creators: @NexdyMC & @AhzanMC</span>
                 </div>
                 <div class="credit-row">
-                    <span>Version:</span>
-                    <span>26.1</span>
+                    <span>Version: 26.1</span>
                 </div>
                 <div class="credit-row">
                     <span>Open Source:</span>
                     <span>
-                        <a href="https://github.com/AhzanMC" target="_blank" class="credit-link">GitHub AhzanMC</a>
-                        <a href="https://github.com/NexdyMC" target="_blank" class="credit-link">GitHub NexdyMC</a>
+                        <a href="https://github.com/AhzanMC" target="_blank" class="text-blue-500 hover:underline">GitHub AhzanMC</a>
+                        <a href="https://github.com/NexdyMC" target="_blank" class="text-blue-500 hover:underline">GitHub NexdyMC</a>
                     </span>
                 </div>
-                <p class="thanks-text">Terima Kasih >w<</p> 
+                <p class="text-center mt-2 italic">Terima Kasih >w<</p> 
             </div> 
         </div> 
     </main> 
