@@ -21,10 +21,6 @@
     --gd: #20FF1A77;
     --wa: #FFFFFF73;
     --wbg: #ffffff13;
-    --ca: #00FFFF;
-    --cd: #00FEFED8;
-    --cc: #00FBFD7C;
-    --cbg:#00F9F921;
     --f-size: 20px ;
     --f-sz-i: 30px ;
     --background-url: url(banner2.webp);
@@ -32,15 +28,14 @@
     --bbrr: 30px;
     --br: 2px solid var(--); /* active border bebas mau warna apa*/
 }
-   
+
 @font-face{
     font-family: 'Minecraft';
     src: url(../fonts/Minecraft.otf);
-   
 }
 
 body {
-    background: url(../images/banner2.webp);
+    background: url(../images/background.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -51,11 +46,16 @@ body {
     align-items: center;
 }
 main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section {
+    backdrop-filter: blur(12px);
+    margin: 1rem;
     border: 2px solid var(--c);
     border-radius: 1rem;
-    margin: 1rem;
 }
-
 .container {
     text-align: center;
     padding: 1rem 0.75rem;
@@ -82,7 +82,7 @@ main {
     margin-bottom: 1rem;
     
     h3 {
-       margin-top: 1rem;
+        margin-top: 1rem;
     }
     
     &:hover {
@@ -97,21 +97,21 @@ main {
     padding: 0.5rem;
     font-size: 1.25rem;
     font-family: 'Minecraft';
-    border: 2px solid var(--cd);
-    color: var(--ca);
+    border: 2px solid #00FFFF;
+    color: #A2FBFA;
     border-radius: 999px;
-    background: var(--cbg);
+    background: #00F6FB30;
     transition-duration: .3s;
     text-decoration: none;
     &:hover{
-        background: var(--cc);
+        background: #00FDFD4F;
     }
 }
 
 .credit-content {
-    background: var(--cbg);
+    background: #00F6FB30;
     padding: 1rem 0.75rem;
-    color: var(--ca);
+    color: #00F5F5;
 }
 
 .credit-link {
@@ -155,15 +155,16 @@ main {
         text-align: center;
         width: 100%;
         padding: 0.5rem;
-        color: var(--white);
+        color: #EF0000 ;
         font-size: 1rem;
         text-decoration: none;
-        border: 2px solid var(--ra);
+        border: 2px solid #ef0000;
         border-top-left-radius: 999px;
         border-bottom-left-radius: 999px;
         font-size: 1rem;
+        background: #FC110031;
         &:hover {
-            background: var(--rd);
+            background: #FD251570;
         }
     }
     
@@ -173,21 +174,23 @@ main {
         width: 100%;
         font-size: 1rem;
         padding: 0.5rem;
-        color: var(--white);
+        color: #2EFE29;
         font-size: 1rem;
         background: none;
         border: none;
-        background: var(--gbg);
-        border: 2px solid var(--ga);
+        font-family: 'Minecraft';
+        background: #22FF111E;
+        border: 2px solid #2EFE29F7;
         border-top-right-radius: 999px ;
         border-bottom-right-radius: 999px;
         &:hover {
-            background: var(--gd);
+            background: #32FD284F;
         }
     }
 }
 
 
 .output-content {
+    max-width: 400px;
     padding: 1rem;
 }
