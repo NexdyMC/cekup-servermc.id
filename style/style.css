@@ -45,17 +45,17 @@ body {
     justify-content: center;
     align-items: center;
 }
-main {
+/* main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-section {
+} */
+/* section {
     backdrop-filter: blur(12px);
     margin: 1rem;
     border: 2px solid var(--c);
     border-radius: 1rem;
-}
+} */
 
 /* .container {
     text-align: center;

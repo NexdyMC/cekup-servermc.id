@@ -33,7 +33,7 @@ async function getServerStatus() {
                 Server : ${data.motd.clean}<br>
                 IP : ${data.hostname}<br>
                 Port : ${data.port}<br>
-                Status : ONLINE<br>
+                Status : <span class="text-green-400">ONLINE</span><br>
                 Players : ${data.players.online} / ${data.players.max}<br>
                 Server Software : ${data.software}<br>
                 Version : ${data.version}<br>
