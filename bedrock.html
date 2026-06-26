@@ -13,17 +13,18 @@
 </head>
 <body class="bg-[url('images/background.webp')] bg-center bg-cover h-screen text-white font-['Minecraft'] flex justify-center items-center"> 
     <main class="flex justify-center flex-wrap overflow-auto max-h-screen">
-        <section class="backdrop-blur m-4 border-2 border-blue-600 rounded-2xl w-80">
+        
+        <!-- section : content -->
+        <section class="m-4 border border-blue-600 border-2 rounded-2xl backdrop-blur overflow-hidden w-80">  
             <div class="text-center py-4 px-3">
-    
-                <p class="text-4xl mb-4">Server Bedrock</p>
-                
+                <p class="text-4xl mb-4">Server Bedrock</p>            
+        
                 <!-- card : java -->
                 <div class=" flex justify-center items-center gap-2 mb-4">
-                <a href="#" class="text-white bg-blue-600/10 grid content-between border-2 border-blue-600 p-4 rounded-xl duration-300 hover:scale-105 hover:bg-blue-600/30">
-                    <img src="images/bedrock.webp" class="card-img" width="100">
-                    <p class="mt-4 text-xl">Bedrock</p>
-                </a>
+                    <a href="#" class="text-white bg-blue-600/10 grid content-between border-2 border-blue-600 p-4 rounded-xl duration-300 hover:scale-105 hover:bg-blue-600/30">
+                        <img src="images/bedrock.webp" class="card-img" width="100">
+                        <p class="mt-4 text-xl">Bedrock</p>
+                    </a>
                 </div>
     
                 <!-- form -->
@@ -56,18 +57,13 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body" id="server-status">
-                            <div class="d-flex justify-content-center">
-                                <div class="spinner-border" role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </div>
-                            </div>
+                            <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
 
     <!-- script js -->
     <script src="js/script.js"></script>

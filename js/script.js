@@ -24,6 +24,8 @@ async function getServerStatus() {
     const response = await fetch(`https://api.mcsrvstat.us/3/${ip}`);
     const data = await response.json();
 
+    
+    
     if (data.online) {
         // Jika Server Online
         document.getElementById("server-status").innerHTML = `
