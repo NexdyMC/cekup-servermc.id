@@ -6,54 +6,52 @@
 <head lang="Id">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Server Minecraft</title>
-    
-    <!-- tailwind css -->
-    <script src="js/tailwind.js"></script>
-    
-    <!-- link style -->
-    <link rel="stylesheet" href="https://www.github.com/NexdyMC">
-    <link rel="stylesheet" href="style/style.css">
+    <title>Bedrock | Cek Server MC</title>
+    <!-- cdn : tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.js"></script>
 </head>
-<body>
-
-    <main class="flex justify-center flex-wrap">
-        <section>
-            <div class="container">
+<body class="bg-[url('images/background.webp')] bg-center bg-cover h-screen text-white font-['Minecraft'] flex justify-center items-center"> 
+    <main class="flex justify-center flex-wrap overflow-auto max-h-screen">
+        <section class="backdrop-blur m-4 border-2 border-blue-600 rounded-2xl w-80">
+            <div class="text-center py-4 px-3">
     
-                <div class="header-text">
-                    <h1>Server Bedrock</h1>
-                </div>
-    
-                <div class="card-content">
-                    <a href="#" class="card-list">
-                        <img src="images/bedrock.webp" class="card-img" width="100">
-                        <h3>Bedrock</h3>
-                    </a>
-                </div>
+                <p class="text-4xl mb-4">Server Bedrock</p>
                 
+                <!-- card : java -->
+                <div class=" flex justify-center items-center gap-2 mb-4">
+                <a href="#" class="text-white bg-blue-600/10 grid content-between border-2 border-blue-600 p-4 rounded-xl duration-300 hover:scale-105 hover:bg-blue-600/30">
+                    <img src="images/bedrock.webp" class="card-img" width="100">
+                    <p class="mt-4 text-xl">Bedrock</p>
+                </a>
+                </div>
     
                 <!-- form -->
-                <form class="form-content">
-                    <!-- input : ip  -->
-                    <label for="ip-input">IP Server </label>
-                    <input type="text" class="ip-input" id="ip-input" placeholder="Ex : play.example.com" required>
+                <form class="grid text-left">
+
+                    <!-- input : IP -->
+                    <label for="ip-input" class="text-md text-normal">IP Server</label>
+                    <input type="text" class="my-1 px-2 py-1 mb-2 border-2 border-blue-600 bg-blue-600/20 text-white rounded-full caret-blue-300 " id="ip-input" placeholder="Ex : play.example.com" required>
+
+                    <!-- input : port -->
+                    <label for="ip-input" class="text-md text-normal">Post Server</label>
+                    <input type="text" class="my-1 px-2 py-1 mb-2 border-2 border-blue-600 bg-blue-600/20 text-white rounded-full caret-blue-300 " id="ip-input" placeholder="Ex : play.example.com" value="19132" required>
+
+                    <!-- button content -->
+                    <div class="flex mt-4">
                     
-                    <!-- input : port  -->
-                    <label for="ip-input">Port Server</label>
-                    <input type="number" class="ip-input" id="ip-input" placeholder="Ex : 19132" value="19132" required>
+                        <!-- button : back -->
+                        <a href="index.html" class="duration-300 text-center w-full p-1 text-[#EF0000] text-md decoration-none border-2 border-[#EF0000] rounded-l-full bg-[#FC110031] hover:bg-[#FD251570]">Back</a>
                     
-                    <!-- btn content -->
-                    <div class="btn-content">
-                        <a href="index.html">Back</a>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#ModalHasil">Cek</button>
+                        <!-- button : cek -->
+                        <button type="button" class="duration-300 w-full font-lg p-1 text-[#2EFE29]  border-2 border-[#2EFE29F7] rounded-r-full bg-[#22FF111E] hover:bg-[#32FD284F]" data-bs-toggle="modal" data-bs-target="#ModalHasil">Cek</button>
                     </div>
                 </form>
             </div>
         </section> 
     
-        <section>
-            <!-- output -->
+        <!-- section : output -->
+        <section class="m-4 border border-blue-600 border-2 rounded-2xl backdrop-blur overflow-hidden w-80 p-4">
             <div class="output-content" id="ModalHasil" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
